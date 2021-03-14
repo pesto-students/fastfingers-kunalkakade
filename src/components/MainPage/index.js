@@ -62,9 +62,9 @@ class MainPage extends React.Component {
     const sessionStorage = window.sessionStorage;
     let data = JSON.parse(window.sessionStorage.getItem('scoreBoard')) || [];
     data.slice(Math.max(data.length - 8, 1))
-    if(data.length>0){
-      data[0].hasHighScore=true;
-    }
+    // if(data.length>0){
+    //   data[0].hasHighScore=true;
+    // }
     const currentGame = { name: ` GAME ${data.length +1}`, score: this.state.currentScore, hasHighScore: false};
     for(let i=0;i<data.length;i++){
       if(data[i].hasHighScore && data[i].score < currentGame.score){
