@@ -5,7 +5,8 @@ import {renderTime} from "../utils";
 export default function ScoreBoard(props) {
 
   const data = JSON.parse(window.sessionStorage.getItem('scoreBoard')) || [];
-
+console.log(data.slice(Math.max(data.length - 8, 0)));
+console.log(data)
   return (<div className={"scoreBoard"}>
     SCORE BOARD
     {
