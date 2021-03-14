@@ -1,0 +1,36 @@
+.word{
+    height: 92px;
+    margin: 0.2px 34.3px 18.2px 44.4px;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+    /*font-family: Gotham;*/
+    font-family: Arial;
+    font-size: 92px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.typedInput{
+    width: 622px;
+    height: 90px;
+    margin: 45px 49.4px 30px 35.3px;
+    opacity: 0.59;
+    border-radius: 15px;
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);
+    background-color: #ffffff;
+
+
+    /*font-family: Breamcatcher;*/
+    font-size: 35px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #032228;
+}
