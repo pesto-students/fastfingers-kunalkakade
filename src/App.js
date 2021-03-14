@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Login from "./components/Login";
 import MainPage from "./components/MainPage";
 import './App.css';
-import UserInfo from "./components/UserInfo";
 
 function App() {
   const [userName, setUname] = useState(undefined);

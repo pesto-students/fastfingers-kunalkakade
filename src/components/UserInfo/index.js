@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import PlayerImg from '../../static/person.png'
 import GamepadImg from '../../static/gamepad.png'
 import './style.css';
@@ -8,11 +8,11 @@ function UserInfo(props) {
   return (
     <div className={"userInfo"}>
       <div className={"userInfoElements"}>
-        <img src={PlayerImg}/>
+        <img src={PlayerImg} alt={"player image"}/>
         <div>{props.userName}</div>
       </div>
       <div className={"userInfoElements"}>
-        <img src={GamepadImg}/>
+        <img src={GamepadImg} alt={"gamepad image"}/>
         <div>LEVEL : {props.level}</div>
       </div>
     </div>

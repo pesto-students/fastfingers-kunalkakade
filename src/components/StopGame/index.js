@@ -5,7 +5,7 @@ import CrossImg from "../../static/cross.png";
 export default function StopGame(props) {
   return (
     <div className={"stopGame"} style={{display:"flex"}} onClick={props.onClick}>
-      <img src={CrossImg}/>
+      <img src={CrossImg} alt={"close image"}/>
       <span >
         Stop Game
       </span>
