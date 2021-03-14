@@ -44,7 +44,7 @@ export default class ScorePage extends React.Component {
                     New High Score
                   </div>}
                   <div style={{display: "flex"}} onClick={this.goBackToMainPage}>
-                    <img className={"reloadImg"} src={RelaodImg} alt={"reload image"}/>
+                    <img className={"reloadImg"} src={RelaodImg} alt={"reload"}/>
                     <div className={"playAgain"}>
                       Play again
                     </div>
