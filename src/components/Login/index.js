@@ -7,6 +7,7 @@ function Login(props) {
   const [uname, setUname] = useState(undefined);
   const [errorMsg, setErrorMsg] = useState(undefined);
   const [level, setLevel] = useState("EASY");
+  const [ category, setCategory] = useState("Default");
   const handleLevelChange = (event) =>{
     setLevel(event.target.value);
   };
@@ -20,8 +21,12 @@ function Login(props) {
     if(!uname){
       setErrorMsg("Player name cannot be empty")
     }
-    props.onSubmit(uname, level);
+    props.onSubmit(uname, level, category);
   }
+
+  const handleCategoryChange = (event) =>{
+    setCategory(event.target.value);
+  };
 
   return (
     <div className="login">
@@ -30,6 +35,13 @@ function Login(props) {
       <h3>_____________ The ultimate Typing Game_____________</h3>
       <div className={"login-form"} >
         <input onChange={handleNameChange} className={"name-input"} type={"text"} placeholder={"type your name"}/>
+        <select onChange={handleCategoryChange} className={"select-level"} name="cars">
+          <option value="Default">Default</option>
+          <option value="PersonName">Person Name</option>
+          <option value="Animals">Animals</option>
+          <option value="Cities">Cities</option>
+        </select>
+
         <select onChange={handleLevelChange} className={"select-level"} name="cars">
           <option value="EASY">EASY</option>
           <option value="MEDIUM">Medium</option>

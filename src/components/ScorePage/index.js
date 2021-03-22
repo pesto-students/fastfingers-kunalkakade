@@ -13,7 +13,23 @@ export default class ScorePage extends React.Component {
     this.state = {
       goBackToMainPage: false,
       goToLogin: false,
+      timeLeft: 10,
     }
+  }
+
+  componentDidMount() {
+    this.timer = setTimeout(()=>{
+      this.setState({goBackToMainPage: true})
+    }, 10000);
+
+    this.showTimer = setInterval(()=>{
+      this.setState({timeLeft: this.state.timeLeft - 1})
+    }, 1000);
+
+  }
+  componentWillUnmount() {
+    clearTimeout(this.timer);
+    clearInterval(this.showTimer);
   }
 
   goBackToMainPage = () => {
@@ -30,7 +46,7 @@ export default class ScorePage extends React.Component {
     }
     return (
       <div>
-        {this.state.goBackToMainPage ? <MainPage newUser={false} userName={this.props.userName} level={this.props.level}/> :
+        {this.state.goBackToMainPage ? <MainPage newUser={false} userName={this.props.userName} category={this.props.category} level={this.props.level}/> :
           <div>
             <div style={{display: "flex"}}>
               <UserInfo userName={this.props.userName} level={this.props.level}/>
@@ -46,7 +62,7 @@ export default class ScorePage extends React.Component {
                   <div style={{display: "flex"}} onClick={this.goBackToMainPage}>
                     <img className={"reloadImg"} src={RelaodImg} alt={"reload"}/>
                     <div className={"playAgain"}>
-                      Play again
+                      Game will restart in {this.state.timeLeft}
                     </div>
                   </div>
                 </div>

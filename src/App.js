@@ -6,14 +6,16 @@ import './App.css';
 function App() {
   const [userName, setUname] = useState(undefined);
   const [level, setLevel] = useState("EASY");
+  const [ category, setCategory] = useState("Default");
 
-  const onLoginSubmit = (name, level = "EASY") => {
+  const onLoginSubmit = (name, level = "EASY",category) => {
     setLevel(level);
     setUname(name);
+    setCategory(category)
   }
   return (
     <div className="App">
-      {userName ? <MainPage newUser={true} userName={userName} level={level}/> : <Login onSubmit={onLoginSubmit}/>}
+      {userName ? <MainPage newUser={true} userName={userName} level={level} category={category}/> : <Login onSubmit={onLoginSubmit}/>}
     </div>
   );
 }
