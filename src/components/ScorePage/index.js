@@ -51,7 +51,7 @@ export default class ScorePage extends React.Component {
             <div style={{display: "flex"}}>
               <UserInfo userName={this.props.userName} level={this.props.level}/>
               <div style={{flex: "1", paddingTop: "200px"}}>
-                <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                <div className={"finalScore"} style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                   <div className={"gameName"}>SCORE: {this.props.gameName}</div>
                   <div className={"score"}>
                     {renderTime(this.props.score)}

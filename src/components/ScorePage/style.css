@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
 .gameName{
     width: 572px;
     height: 70px;
     margin: 22px 12.2px 12.7px 48.3px;
-    font-family: Gotham;
+    font-family: 'Lalezar', cursive;
     font-size: 70px;
     font-weight: 500;
     font-stretch: normal;
@@ -17,7 +19,7 @@
     width: 230px;
     height: 118px;
     margin: 0.4px 20px 0.1px 9.3px;
-    font-family: Gotham;
+    font-family: 'Lalezar', cursive;
     font-size: 118px;
     font-weight: 500;
     font-stretch: normal;
@@ -55,6 +57,7 @@
     letter-spacing: normal;
     text-align: left;
     color: #ff5155;
+    cursor: pointer;
 }
 
 .reloadImg {
@@ -62,6 +65,7 @@
     height: 52.6px;
     margin: 4.7px 35.4px 49.7px 20.8px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .quit{

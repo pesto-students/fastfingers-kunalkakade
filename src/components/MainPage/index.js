@@ -36,6 +36,7 @@ class MainPage extends React.Component {
       timeForWord: timeForWord,
       gameOver: false,
       currentScore: 0,
+      message:messages[Math.floor(Math.random() * messages.length)],
     }
   }
 
@@ -84,6 +85,7 @@ class MainPage extends React.Component {
         timeForWord: timeForWord,
         level: level,
         difficultyFactor: parseFloat(difficultyFactor.toFixed(2)),
+        message:messages[Math.floor(Math.random() * messages.length)],
       });
     } else {
       this.setState({userInput: value});
@@ -162,7 +164,7 @@ class MainPage extends React.Component {
                   {this.getCurrentWordComponent()}
                   <input onChange={this.onUserInputChange} value={this.state.userInput} className={"typedInput"}
                          autoFocus/>
-                  <div className={"message"}>{this.getRandomMessage()}</div>
+                  <div className={"message"}>{this.state.message}</div>
                 </div>
               </div>
               <ScoreCount score={this.state.currentScore}/>
@@ -171,11 +173,6 @@ class MainPage extends React.Component {
 
       </div>
     );
-  }
-
-
-  getRandomMessage() {
-    return messages[Math.floor(Math.random() * messages.length)];
   }
 }
 
