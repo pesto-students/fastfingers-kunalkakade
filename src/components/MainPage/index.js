@@ -39,10 +39,21 @@ class MainPage extends React.Component {
       message:messages[Math.floor(Math.random() * messages.length)],
     }
   }
+  componentDidMount() {
+    this.scoreTimer = setInterval(()=>{
+      this.setState({currentScore: this.state.currentScore + 1});
+    },1000);
+  }
+
+  componentWillUnmount() {
+    if(this.scoreTimer){
+      clearInterval(this.scoreTimer);
+    }
+  }
 
 
   setScore = (score) => {
-    this.setState({currentScore: this.state.currentScore + score});
+    // this.setState({currentScore: this.state.currentScore + score});
   }
 
 
@@ -63,6 +74,7 @@ class MainPage extends React.Component {
     data.push(currentGame);
     sessionStorage.setItem("scoreBoard", JSON.stringify(data));
     this.setState({gameOver: true});
+    clearInterval(this.scoreTimer);
   };
 
   onUserInputChange = (event) => {

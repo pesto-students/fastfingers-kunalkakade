@@ -47,7 +47,7 @@ function Login(props) {
       <h3>_____________ The ultimate Typing Game_____________</h3>
       <div className={"login-form"} >
         <input onChange={handleNameChange} className={"name-input"} type={"text"} placeholder={"type your name"}/>
-        <div style={{color:"red"}}>{errorMsg}</div>
+        <div style={{color:"red", textAlign:"left"}}>{errorMsg}</div>
         <select onChange={handleCategoryChange} className={"select-level"} name="cars">
           <option value="">Select category of words</option>
           <option value="Default">Default</option>
@@ -55,7 +55,7 @@ function Login(props) {
           <option value="Animals">Animals</option>
           <option value="Cities">Cities</option>
         </select>
-        <div style={{color:"red"}}>{categoryErrorMsg}</div>
+        <div style={{color:"red",  textAlign:"left"}}>{categoryErrorMsg}</div>
 
         <select onChange={handleLevelChange} className={"select-level"} name="cars">
           <option value="EASY">EASY</option>
