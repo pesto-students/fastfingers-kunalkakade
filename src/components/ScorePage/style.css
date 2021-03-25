@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+.gameName{
+    width: 572px;
+    height: 70px;
+    margin: 22px 12.2px 12.7px 48.3px;
+    font-family: 'Lalezar', cursive;
+    font-size: 70px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.score{
+    width: 230px;
+    height: 118px;
+    margin: 0.4px 20px 0.1px 9.3px;
+    font-family: 'Lalezar', cursive;
+    font-size: 118px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.newHighScore{
+    width: 383px;
+    height: 53px;
+    margin: 26px 41.3px 62.3px 58.4px;
+    font-family: Gotham;
+    font-size: 53px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.playAgain{
+    width: 313px;
+    height: 54px;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+    /*font-family: Gotham;*/
+    font-size: 40px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ff5155;
+    cursor: pointer;
+}
+
+.reloadImg {
+    width: 52.5px;
+    height: 52.6px;
+    margin: 4.7px 35.4px 49.7px 20.8px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.quit{
+    width: 112px;
+    height: 47px;
+    margin: 30.6px 33.4px 27.7px 39.7px;
+    text-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+    /*font-family: Gotham;*/
+    font-size: 47px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ff5155;
+    cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.userInfo{
+    font-size: 44px;
+    font-size: 34px;
+    color: #ff5155;
+    font-family: 'Major Mono Display', monospace;
+    /*border-radius: 15px;*/
+    /*box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.8);*/
+    margin: 10px;
+    margin: 48.3px 68.7px 1.1px 65.7px;
+
+    /*width: 350px;*/
+    /*height: 44px;*/
+    /*font-size: 44px;*/
+
+    text-align: left;
+}
+
+.userInfoElements {
+    display: flex;
+}
+
+.userInfoElements > img {
+    width: 40.7px;
+    height: 40.7px;
+    margin: 0 22.3px 6.3px 0;
+    object-fit: contain;
+}
